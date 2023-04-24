@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed de ig con Bootstrap</title>
+    <script src="https://kit.fontawesome.com/f11a3678b6.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.instagram.com">
+        <i class="fa-brands fa-instagram"></i>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Logo" width="100" height="30" class="d-inline-block align-text-top">
+        </a>
+       
+        <div class="right">
+          <button type="button" class="btn btn-success justify content center" data-toggle="Modal" data-target="#postmodal">Create a new post</button>
+
+          <!---Modal-->
+  
+          <div class="modal fade" id="postmodal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="postmodal" aria-hidden="true"
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <div class="form-group">
+                    <label for="formcontroltextareal"></label>
+                    <textarea class="form-control border-dark" id="formcontroltextareal" rows="2"></textarea>
+                  </div>
+                <i class="fas fa-camera" style="font-size: 20px; margin-right: 2px;border: 1.5px solid lightgray; padding: 6px; border-radius: 4px;"></i>
+                <i class="fas fa-map-marker-alt" style="font-size: 20px; border: 1.5px solid lightgray; padding: 6px 8px; border-radius: 4px;"></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-succes">Publish</button>
+               
+                </div>
+                </div>
+              </div>
+              
+        
+     <!---Dropdown-->
+  
+         <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear" style="color: white;"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><a class="dropdown-item" href="#">Log out</a></li>
+          </ul>
+        </div>
+        </div>
+       
+        
+        </nav>
+        <div>
+
+        </div>
+
+        <ul class="nav nav-tabs nav justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+              role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-regular fa-square"
+                style="color: #01060e;"></i></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+              role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                class="fa-solid fa-table-cells"></i></button>
+          </li>
+        </ul>
+
+    <!----Primer Contenido-->
+  <div class="tab-content" id="myTabcontent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="feed">
+        <div class="card" style="width: 18rem;">
+      <h5 class="card-title">El Bicho Triste</h5>
+        <img src="https://cadenaser.com/resizer/xitypzdTJpMjtzwYJxtAvFqYHic=/1200x900/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/3U6Z62NQS5FMVJ5C5C7Z72AWUE.jpg" class="card-img-top" alt="..."/>
+        <div class="card-body">
+          <p class="card-title"><strong>19.787 likes</strong></p>
+          <p class="card-text">El bicho triste despues de quedar eliminado de su posible proximo mundial.</p>
+         
+        </div>
+
+     <!----Segunda Tarjeta-->
+
+     <div class="card" style="width: 18rem;">
+      <h5 class="card-title">El Messias derrotado</h5>
+            <img src="https://m.economictimes.com/thumb/msid-52949221,width-1200,height-900,resizemode-4,imgsize-39289/messis-argentina-career-started-as-it-ended-in-tears.jpg" class="card-img-top" alt="..."/>
+            <div class="card-body">
+              <p class="card-title"><strong>19.787 likes</strong></p>
+              <p class="card-text">Messi derrotado y desconsolado despues de perder la final de la copa america contra Chile.</p>
+              
+          </div>  
+
+    <!----Tercera Tarjeta--> 
+
+     <div class="card" style="width: 18rem;">
+      <h5 class="card-title">Oh Ney Muito Mal</h5>
+                <img src="https://www.reuters.com/resizer/f5USrbxSpCzuLDQv0J8zvKkLWTk=/1920x1005/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/72QQC5LSRFI5TMGFWNAGDTGRVI.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">Neymar muy mal ya que acaba de quedar afuera de la copa del mundo.</p>
+                  
+            </div>   
+
+     <!----Cuarta Tarjeta-->  
+
+     <div class="card" style="width: 18rem;">
+      <h5 class="card-title">Luchito Desconsolado</h5>
+                <img src="https://i2-prod.dailystar.co.uk/incoming/article26721568.ece/ALTERNATES/s615b/1_JS263563348.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">Luis Suarez llorando porque no habia senal en el estadio.</p>
+                  
+            </div> 
+
+     <!----Quinta Tarjeta-->
+
+     <div class="card" style="width: 18rem;">
+                <h5 class="card-title">El Fideo Llorando</h5>
+                <img src="https://pbs.twimg.com/media/DgpQZTTU0AAHkF3?format=jpg&name=small" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">Angel Di Maria llorando al igual que Messi despues de haber perdido la misma final de copa america.</p>
+                 
+            </div> 
+
+      <!----Sexta Tarjeta--> 
+
+     <div class="card" style="width: 18rem;">
+      <h5 class="card-title">Jaime Crying</h5>
+                <img src="https://static.ffx.io/images/$zoom_1%2C$multiply_1.0745%2C$ratio_1.777778%2C$width_577%2C$x_35%2C$y_170/t_crop_custom/q_86%2Cf_auto/23725f771968ccb660a8ff6e2e226b28f07f421a" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">James Rodriguez llorando ya que Colombia quedaba afuera de la copa del mundo.</p>
+                  
+            </div>  
+
+      <!----Septima Tarjeta-->   
+
+      <div class="card" style="width: 18rem;">
+        <h5 class="card-title">Segundo Brasileiro Tristinho</h5>
+                <img src="https://pbs.twimg.com/media/BsDgBZyCEAEOUV4?format=jpg&name=900x900" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">David Luiz no podia creer lo que pasaba y se puso a llorar despues del 1-7 contra Alemania.</p>
+                  
+            </div>  
+
+      <!----Octava Tarjeta-->   
+
+        <div class="card" style="width: 18rem;">
+          <h5 class="card-title">The Last Dance</h5>
+                <img src="https://eu-images.contentstack.com/v3/assets/blta90d05ad41a54a71/blt3113662cab68daf0/625982ec41bc1e0f2cf09ed9/2DYK8GR.jpg" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">Beckham en su ultimo partido como jugador profesional de futbol saliendo del campo.</p>
+                  
+            </div>
+
+      <!----Novena Tarjeta-->  
+
+        <div class="card" style="width: 18rem;">
+          <h5 class="card-title">Terry En Baja</h5>
+                <img src="https://i.guim.co.uk/img/static/sys-images/Football/Pix/pictures/2008/05/22/JohnTerryPAMartinRickett3.jpg?width=465&quality=85&dpr=1&s=none" class="card-img-top" alt="..."/>
+                <div class="card-body">
+                  <p class="card-title"><strong>19.787 likes</strong></p>
+                  <p class="card-text">Terry despues de que el bicho le quitara la Champions League que gano el United en penales.</p>
+                 
+                      </div>    
+                    </div>
+                  </div>
+                </div>
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+<!--Segundo Contenido-->
+
+<div class="tab-pane fade d-flex justify-content-center flex-wrap  gap-3 container text-center"
+        id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cadenaser.com/resizer/xitypzdTJpMjtzwYJxtAvFqYHic=/1200x900/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/3U6Z62NQS5FMVJ5C5C7Z72AWUE.jpg" class="card"
+            alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://m.economictimes.com/thumb/msid-52949221,width-1200,height-900,resizemode-4,imgsize-39289/messis-argentina-career-started-as-it-ended-in-tears.jpg"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://www.reuters.com/resizer/f5USrbxSpCzuLDQv0J8zvKkLWTk=/1920x1005/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/72QQC5LSRFI5TMGFWNAGDTGRVI.jpg"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img
+            src="https://i2-prod.dailystar.co.uk/incoming/article26721568.ece/ALTERNATES/s615b/1_JS263563348.jpg"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://pbs.twimg.com/media/DgpQZTTU0AAHkF3?format=jpg&name=small"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://i.pinimg.com/564x/e3/18/ca/e318ca6a151c81a701ed4f62663be400--james-rodrigues-world-cup-.jpg"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://pbs.twimg.com/media/BsDgBZyCEAEOUV4?format=jpg&name=900x900"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="https://eu-images.contentstack.com/v3/assets/blta90d05ad41a54a71/blt3113662cab68daf0/625982ec41bc1e0f2cf09ed9/2DYK8GR.jpg"
+            class="card-img-top" alt="..." style="height:417px;">
+        </div>
+        
+      </div>
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

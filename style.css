@@ -1,0 +1,11 @@
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feed {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
